@@ -3,7 +3,7 @@ from sqlalchemy.exc import IntegrityError
 from faker import Faker
 from . import db
 from .models import User, Post
-
+""" DOC STRING Paulo Pacheco"""
 
 def users(count=100):
     fake = Faker()
@@ -12,7 +12,9 @@ def users(count=100):
         u = User(email=fake.email(),
                  username=fake.user_name(),
                  password='password',
-                 confirmed=True,
+                 con
+
+        firmed=True,
                  name=fake.name(),
                  location=fake.city(),
                  about_me=fake.text(),
